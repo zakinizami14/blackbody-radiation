@@ -37,7 +37,7 @@ int main()
         //Evenly spread out data points from 0.1 to 3.0 µm
         lambda = 0.1 + (2.9 / (DATA_POINTS-1)) * i;
         
-        fprintf(file, "%-16lf %-8e %-8e %-8e\n", lambda, planck(lambda, temp1), planck(lambda, temp2), planck(lambda, temp3));
+        fprintf(file, "%-16lf %-13e %-13e %-13e\n", lambda, planck(lambda, temp1), planck(lambda, temp2), planck(lambda, temp3));
     }
     
     fclose(file);
